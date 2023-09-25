@@ -1,0 +1,29 @@
+{
+  "name": "s07-okanban-frontend-red-chojiu15",
+  "version": "1.0.0",
+  "description": "- [Cours E01](docs/cours/E01.md)\r - [Challenge C01](docs/challenges/C01.md)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-Clock-Watt/S07-okanban-frontend-RED-Chojiu15.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-Clock-Watt/S07-okanban-frontend-RED-Chojiu15/issues"
+  },
+  "homepage": "https://github.com/O-Clock-Watt/S07-okanban-frontend-RED-Chojiu15#readme",
+  "dependencies": {
+    "sortablejs": "^1.15.0",
+    "vite": "^4.3.9"
+  }
+}

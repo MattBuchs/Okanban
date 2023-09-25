@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>o'Delice</title>
+  
+  <!-- Import d'une librairie pour avoir un rendu plus sympa -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- On aussi charger les fichiers JS dans le head avec l'attribut defer -->
+  <script defer src="./revision.js"></script>
+</head>
+<body>
+  <!-- Title -->
+  <h1>Mon panier o'Delice</h1>
+
+  <!-- List container -->
+  <div id="fruits-container">
+
+
+
+    
+  </div>
+  
+
+  <!-- Button -->
+  <button class="button is-info" id="add-fruit-button">Ajouter un fruit</button>
+
+
+  <!-- LES MODALS -->
+
+  <div id="add-fruit-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Ajouter un fruit</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        Un formulaire pour entrer les données d'un fruit
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success" >Sauvegarder</button>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <!-- EN BAS, LES TEMPLATES -->
+
+  <!-- Template -->
+  <!-- Template = structure pour construire facilement des éléments HTML avec ce format -->
+  <template id="fruit-template">
+    <article class="card">
+      <h2 class="card-title" slot="name">Nom du fruit</h2>
+      <footer class="card-footer">
+        <p class="card-footer-item" slot="quantity">Quantité : 3</p>
+        <p class="card-footer-item" data-template="unit-price">Prix à l'unité : 3€</p> <!-- Avec les data-attributes qui ne sont pas vraiment fait pour ça, ça fonctionne aussi -->
+      </footer>
+    </article>
+  </template>
+
+  <!-- Dans le body, la balise script si elle n'est pas dans le head (defer)-->
+  <!-- <script src="./revision.js"></script> -->
+</body>
+</html>
